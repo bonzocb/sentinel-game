@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra: Złap Dwubiegunowke!!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .duck {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url('sentinel.png'); /* Możesz podmienić na swój obrazek */
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .score {
+            font-size: 24px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gra: Złap Kaczkę!</h1>
+    <p class="score">Wynik: <span id="score">0</span></p>
+
+    <script src="game.js"></script>
+</body>
+</html>
